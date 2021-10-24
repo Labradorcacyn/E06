@@ -2,10 +2,7 @@ package com.e06Cynthia.ejercicio1.model;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
@@ -16,6 +13,7 @@ public class Producto implements Serializable {
     @Id
     @GeneratedValue
     private Long id;
+
     private String nombre;
     private double pvp;
 
